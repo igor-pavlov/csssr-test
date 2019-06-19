@@ -1,0 +1,8 @@
+mixin signature(data)
+	- data = data || {}
+
+	+b('fieldset').signature&attributes(attributes)
+		+e.row
+			+e('label').label(for=data.name)!=data.title
+			+e.field
+				+e('input').input(type="text" id=data.name name=data.name value=data.date maxlength="10")

@@ -1,0 +1,11 @@
+extends ../blocks/layout-default/layout-default
+
+include ../blocks/container/container
+
+block head
+	- var pageTitle = 'Index page';
+	- var pageDescription = 'Тестовое задание для CSSSR';
+	- var pageKeywords = 'тестовое, тест, csssr, frontend';
+
+block content
+	+container()

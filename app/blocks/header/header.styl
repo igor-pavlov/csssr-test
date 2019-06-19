@@ -1,0 +1,17 @@
+.header
+	position relative
+	display flex
+	justify-content space-between
+
+	&__stamp
+		position absolute
+		retinaSprite $stamp_group
+		top -14px
+		right -58px
+
+		@media $mobile
+			position relative
+			top auto
+			right auto
+			display none
+

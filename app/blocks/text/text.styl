@@ -1,0 +1,57 @@
+.text
+	display flex
+	align-items flex-end
+	margin-bottom 12px
+
+	@media $mobile
+		flex-direction column
+		width 100%
+		align-items flex-start
+
+	&__label
+		flex none
+		margin-right 18px
+		font(PTSans-Bold)
+		font-size 22px
+		color $brown
+
+		@media $mobile
+			font-size 16px
+
+	&__field
+		position relative
+		padding-x(14px)
+		flex 1
+		overflow-x hidden
+
+		@media $mobile
+			padding-x(0)
+			padding-y(7px)
+			width 100%
+
+		&::after
+			position absolute
+			display block
+			content ''
+			retinaSprite $input_text_line_group
+			right 0
+			bottom 0
+
+			@media $mobile
+				right auto
+				left 0
+
+	&__input
+		width 100%
+		height 50px
+		font(CourierNew, 400)
+		font-size 30px
+		color $dark
+
+		&:focus
+			opacity .5
+
+		@media $mobile
+			padding-x(10px)
+			height 28px
+			font-size 22px

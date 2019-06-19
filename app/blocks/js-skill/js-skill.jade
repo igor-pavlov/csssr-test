@@ -1,0 +1,10 @@
+include ../heading/heading
+include ../slider/slider
+
+mixin js-skill(data)
+	- data = data || {}
+
+	+b('fieldset').js-skill&attributes(attributes)
+		+heading()
+			+e.H2.title!=data.title
+		+slider(data.vars)

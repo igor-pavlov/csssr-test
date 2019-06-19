@@ -1,0 +1,19 @@
+body
+	padding 62px 0 74px
+	font(PTSans-Regular)
+	background url('../../pattern.png') repeat 0 0
+
+	@media $mobile
+		padding-y(24px)
+
+html:not([dir=rtl])
+	body
+		.noUi-horizontal
+			.noUi-handle
+				right: -3px
+
+input[type='number']
+	-moz-appearance textfield
+
+	&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+		-webkit-appearance none

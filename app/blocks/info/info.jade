@@ -1,0 +1,8 @@
+include ../text/text
+
+mixin info(data)
+	- data = data || {}
+
+	+b('fieldset').info
+		each item in data.inputs
+			+text(item)

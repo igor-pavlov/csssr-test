@@ -1,0 +1,94 @@
+{
+	"title": "Расскажите о&nbsp;себе чекбоксами",
+	"subtitle": "Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не&nbsp;означает, что у&nbsp;вас меньше шансов стать одним из&nbsp;наших товарищей. Это означает, что вы&nbsp;будете получать те&nbsp;задачи, с&nbsp;которыми гарантировано будете справляться.",
+	"inputs": [
+		{
+			"name": "bem",
+			"label": "БЭМ/OOCSS",
+			"checked": "checked"
+		},
+		{
+			"name": "pug",
+			"label": "Pug (Jade)",
+			"checked": "checked"
+		},
+		{
+			"name": "sass-less-stylus",
+			"label": "Stylus/LESS/SASS",
+			"checked": "checked"
+		},
+		{
+			"name": "svg",
+			"label": "Работаю с&nbsp;SVG",
+			"checked": "checked"
+		},
+		{
+			"name": "semantics",
+			"label": "Верстаю семантично",
+			"checked": "checked"
+		},
+		{
+			"name": "accessibility",
+			"label": "Accessibility (A11Y)"
+		},
+		{
+			"name": "ecmascript",
+			"label": "ES2015/ES2016"
+		},
+		{
+			"name": "gulp-grunt",
+			"label": "Gulp/GRUNT",
+			"checked": "checked"
+		},
+		{
+			"name": "webpack",
+			"label": "Webpack"
+		},
+		{
+			"name": "webgl",
+			"label": "Дружу с&nbsp;WebGL"
+		},
+		{
+			"name": "jquery",
+			"label": "jQuery",
+			"checked": "checked"
+		},
+		{
+			"name": "angular",
+			"label": "Знаю/изучаю Angular"
+		},
+		{
+			"name": "react",
+			"label": "Знаю/изучаю React",
+			"checked": "checked"
+		},
+		{
+			"name": "node",
+			"label": "Знаю/изучаю Node.js"
+		},
+		{
+			"name": "git",
+			"label": "Использую Git",
+			"checked": "checked"
+		},
+		{
+			"name": "accurate-eye",
+			"label": "С&nbsp;глазомером всё ок",
+			"checked": "checked"
+		},
+		{
+			"name": "blog",
+			"label": "Читаю",
+			"link": "blog.csssr.ru",
+			"href": "http://blog.csssr.ru/"
+		},
+		{
+			"name": "lazy",
+			"label": "Я&nbsp;ленивый(-ая)"
+		},
+		{
+			"name": "english",
+			"label": "У&nbsp;меня хороший английский"
+		}
+	]
+}

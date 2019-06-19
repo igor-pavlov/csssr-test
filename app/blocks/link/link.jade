@@ -1,0 +1,4 @@
+mixin link(data)
+	-data = data || {};
+
+	+b('a').link(href=(data.href))!=data.link

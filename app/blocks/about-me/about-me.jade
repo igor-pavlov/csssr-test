@@ -1,0 +1,11 @@
+include ../heading/heading
+
+mixin about-me(data)
+	- data = data || {}
+
+	+b('fieldset').about-me&attributes(attributes)
+		+heading()
+			+e('h2').title!=data.title
+			+e('p').subtitle!=data.subtitle
+		+e.content(contenteditable="true")
+			!=data.content

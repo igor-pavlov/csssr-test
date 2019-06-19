@@ -1,0 +1,143 @@
+@import '../../../node_modules/nouislider/distribute/nouislider.min.css'
+
+.slider
+	margin-top 42px
+	height 100%
+
+	@media $mobile
+		margin 0 0 0 30px
+		height 470px
+
+	&.noUi-target
+		position relative
+		background none
+		border none
+		border-radius 0
+		box-shadow none
+
+	.noUi-base
+		position absolute
+		top -18px
+		right 0
+		width calc(100% - 9px)
+		height 44px
+		cursor pointer
+		border none
+		border-radius 0
+		box-shadow none
+
+		@media $mobile
+			top 0
+			left 25px
+			width 44px
+			height calc(100% - 9px)
+
+	.noUi-handle
+		retinaSprite $range_group
+		top -17px
+		right -10px
+		cursor pointer
+		background-color transparent
+		background-repeat no-repeat
+		border none
+		box-shadow none
+
+		&:focus
+			outline 1px solid rgba(0, 0, 0, .5)
+			opacity .5
+
+		@media $mobile
+			transform rotate(270deg)
+
+		&::before,
+		&::after
+			display none
+
+	.noUi-horizontal
+		height 6px
+
+	.noUi-handle
+		top 1px
+		right -3px
+
+		@media $mobile
+			top -3px
+		right 0
+
+	&__input
+		display none
+
+	&__scale
+		height 26px
+		background url('../../line.png')
+		background-repeat no-repeat
+		background-position -4px 0
+		border none
+		border-radius 0
+		box-shadow none
+
+		@media $mobile
+			position absolute
+			top 47.5%
+			left -170px
+			width 470px
+			background-size contain
+			transform scale(-1, 1) rotate(90deg)
+
+	&__list
+		position relative
+		margin-top 4px
+		display flex
+
+		@media $mobile
+			position absolute
+			left 80px
+			margin-top 0
+			flex-direction column
+			height 100%
+
+	&__item
+		font(PTSans-Bold)
+		font-size 13px
+		line-height 19px
+		cursor pointer
+		user-select none
+		color $brown
+
+		&:focus
+			opacity .5
+
+		&_none
+			width 18.7%
+
+			@media $mobile
+				margin-bottom 70px
+				width 100%
+
+		&_junior
+			margin-top -2px
+			width 29.3%
+
+			@media $mobile
+				margin-bottom 84px
+				width 100%
+
+		&_middle
+			margin-top -2px
+			width 22%
+
+			@media $mobile
+				width 100%
+
+		&_senior
+			position absolute
+			right 0
+			margin-top 5px
+			width 18.7%
+
+			@media $mobile
+				right auto
+				bottom 0
+				margin-top 0
+				margin-bottom 0
+				width 100%

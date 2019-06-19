@@ -1,0 +1,23 @@
+{
+	"title": "Какие у&nbsp;вас планы на&nbsp;будущее?",
+	"subtitle": "Этот ответ ни&nbsp;на&nbsp;что не&nbsp;повлияет. Не&nbsp;беда, если в&nbsp;будущем ваши планы поменяются.",
+	"inputs": [
+		{
+			"name": "markup",
+			"label": "Верстать"
+		},
+		{
+			"name": "js",
+			"label": "Прокачиваться в&nbsp;JS",
+			"checked": "checked"
+		},
+		{
+			"name": "manager",
+			"label": "Менеджерство"
+		},
+		{
+			"name": "other",
+			"label": "Другое"
+		}
+	]
+}

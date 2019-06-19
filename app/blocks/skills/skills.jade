@@ -1,0 +1,13 @@
+include ../checkbox/checkbox
+include ../heading/heading
+
+mixin skills(data)
+	- data = data || {}
+
+	+b('fieldset').skills&attributes(attributes)
+		+heading()
+			+e('h2').title!=data.title
+			+e('p').subtitle!=data.subtitle
+		+e('ul').checkboxs
+			each item in data.inputs
+				+checkbox(item)

@@ -1,0 +1,15 @@
+include ../info/info
+include ../skills/skills
+include ../js-skill/js-skill
+include ../about-me/about-me
+include ../future/future
+include ../signature/signature
+
+mixin form()
+	+b('form').form&attributes(attributes)
+		+info(getData('info'))
+		+skills(getData('skills'))
+		+js-skill(getData('js-skill'))
+		+about-me(getData('about-me'))
+		+future(getData('future'))
+		+signature(getData('signature'))

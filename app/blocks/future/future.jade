@@ -1,0 +1,13 @@
+include ../heading/heading
+include ../radio/radio
+
+mixin future(data)
+	- data = data || {}
+
+	+b('fieldset').future&attributes(attributes)
+		+heading()
+			+e('h2').title!=data.title
+			+e('p').subtitle!=data.subtitle
+		+e('ul').list(role="group" aria-labelledby="future")
+			each item in data.inputs
+				+radio(item)

@@ -1,0 +1,10 @@
+mixin radio(item)
+	- data = data || {}
+
+	+b('li').radio
+		if item.checked
+			+e('input').input(id=item.name name="future" type="radio" checked=item.checked)
+		else
+			+e('input').input(id=item.name name="future" type="radio")
+
+		+e('label').label(for=item.name)!=item.label

@@ -1,0 +1,17 @@
+include ../link/link
+
+mixin checkbox(item)
+	- data = data || {}
+
+	+b('li').checkbox
+		if item.checked
+			+e('input').input(id=item.name name=item.name type="checkbox" checked=item.checked)
+		else
+			+e('input').input(id=item.name name=item.name type="checkbox")
+
+		if item.link
+			+e('label').label(for=item.name)
+				=item.label
+				+link(item)
+		else
+			+e('label').label(for=item.name)!=item.label

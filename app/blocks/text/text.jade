@@ -1,0 +1,7 @@
+mixin text(item)
+	- data = data || {}
+
+	+b.text
+		+e('label').label(for=item.name)!=item.label
+		+e.field
+			+e('input').input(type=item.type value=item.value id=item.name name=item.name)

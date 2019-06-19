@@ -1,0 +1,7 @@
+mixin slider(vars)
+	+b.slider&attributes(attributes)
+		+e.scale
+		+e('input').input(type="text" name="slider-input" id="slider-input")
+		+e('ul').list
+			each item in vars
+				+e('li').item(id=item.id class=`_${item.id}`)!=item.text
